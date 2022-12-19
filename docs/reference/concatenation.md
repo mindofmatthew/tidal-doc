@@ -3,6 +3,8 @@ title: Concatenation
 id: concatenation
 ---
 
+import { Type } from "@site/src/components/type-signature";
+
 This page will present you all the functions that can be used to concatenate (e.g. add) things together in various ways. Each function will be presented following the same model:
 * **Type signature**: how the function is declared on the **Haskell** side.
 * **Description**: verbal description of the function.
@@ -11,9 +13,7 @@ This page will present you all the functions that can be used to concatenate (e.
 ## Many cats
 
 ### cat
-```haskell
-Type: cat :: [Pattern a] -> Pattern a
-```
+<Type>cat :: [Pattern a] -> Pattern a</Type>
 
 `cat`, (also known as `slowcat`, to match with `fastcat` defined below) concatenates a list of patterns into a new pattern; each pattern in the list will maintain its original duration. For example:
 
