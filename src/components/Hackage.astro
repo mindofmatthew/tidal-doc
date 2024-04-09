@@ -1,13 +1,18 @@
 ---
 import { Markup } from 'astro-remote';
+import Module from './haddock/Module.astro';
 import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+
+import { parse } from 'parse5';
 
 const { title, url } = Astro.props;
 
 const html = await fetch(url).then(res => res.text());
+const parsed = parse(html);
 ---
 
 <StarlightPage frontmatter={ { title } }>
+  <Module />
   <Markup
     content={html} 
     components={{

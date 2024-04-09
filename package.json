@@ -22,6 +22,7 @@
     "astro-remote": "^0.3.2",
     "embla-carousel": "^8.0.0",
     "markdown-it": "^14.0.0",
+    "parse5": "^7.1.2",
     "rehype-accessible-emojis": "^0.3.2",
     "rehype-autolink-headings": "^7.1.0",
     "rehype-slug": "^6.0.0",
